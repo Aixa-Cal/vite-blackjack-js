@@ -33,13 +33,13 @@ export const turnoComputadora = (puntosMinimos, puntosHTML, divCartasComputadora
 
     setTimeout(() => {
         if( puntosComputadora === puntosMinimos ) {
-            alert('Nadie gana :(');
+            alert(`No hay ganador: Puntaje: Jugador ${puntosJugador} | Computadora ${puntosComputadora}`);
         } else if ( puntosMinimos > 21 ) {
-            alert('Computadora gana')
+            alert(`Computadora gana. Puntaje: Jugador ${puntosJugador} | Computadora ${puntosComputadora}`)
         } else if( puntosComputadora > 21 ) {
-            alert('Jugador Gana');
+            alert(`Jugador Gana. Puntaje: Jugador ${puntosJugador} | Computadora ${puntosComputadora}`);
         } else {
-            alert('Computadora Gana')
+            alert(`Computadora Gana. Puntaje: Jugador ${puntosJugador} | Computadora ${puntosComputadora}`)
         }
-    }, 300 );
+    }, "5 second" );
 }

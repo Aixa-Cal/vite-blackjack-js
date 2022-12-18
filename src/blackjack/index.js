@@ -41,7 +41,7 @@ let deck         = [];
      divCartasJugador.append( imgCarta );
  
      if ( puntosJugador > 21 ) {
-         console.warn('Lo siento mucho, perdiste');
+         console.warn(`Lo siento mucho, perdiste. Puntaje: Jugador ${puntosJugador} | Computadora ${puntosComputadora} `);
          btnPedir.disabled   = true;
          btnDetener.disabled = true;
          turnoComputadora( puntosJugador, puntosHTML[1], divCartasComputadora, deck );
