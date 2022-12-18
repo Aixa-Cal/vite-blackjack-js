@@ -5,6 +5,7 @@ import {
   pedirCarta,
   turnoComputadora,
   crearCartaHTML,
+  puntosJugador
 } from "./usecases";
 
 let deck         = [];
