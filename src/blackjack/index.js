@@ -48,7 +48,7 @@ let deck         = [];
          turnoComputadora( puntosJugador, puntosHTML[1], divCartasComputadora, deck );
  
      } else if ( puntosJugador === 21 ) {
-         console.warn('21, genial!');
+         console.warn(`21, genial! Puntaje: Jugador ${puntosJugador} | Computadora ${puntosComputadora}`);
          btnPedir.disabled   = true;
          btnDetener.disabled = true;
          turnoComputadora( puntosJugador, puntosHTML[1], divCartasComputadora, deck );
