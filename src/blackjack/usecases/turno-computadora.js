@@ -29,7 +29,7 @@ export const turnoComputadora = (puntosMinimos, puntosHTML, divCartasComputadora
             break;
         }
 
-    } while(  (puntosComputadora < puntosMinimos)  && (puntosMinimos <= 21 ) );
+    } while( (puntosComputadora < puntosMinimos)  && (puntosMinimos <= 21 ) );
 
     setTimeout(() => {
         if( puntosComputadora === puntosMinimos ) {
