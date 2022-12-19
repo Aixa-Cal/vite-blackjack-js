@@ -5,7 +5,6 @@ import {
   pedirCarta,
   turnoComputadora,
   crearCartaHTML,
-  puntosJugador
 } from "./usecases";
 
 let deck         = [];
@@ -42,13 +41,13 @@ let deck         = [];
      divCartasJugador.append( imgCarta );
  
      if ( puntosJugador > 21 ) {
-         console.warn(`Lo siento mucho, perdiste. Puntaje: Jugador ${puntosJugador} | Computadora ${puntosComputadora} `);
+         console.warn(`Lo siento mucho, perdiste. Puntaje: Jugador ${puntosJugador} | Computadora ${puntosHTML[1]} `);
          btnPedir.disabled   = true;
          btnDetener.disabled = true;
          turnoComputadora( puntosJugador, puntosHTML[1], divCartasComputadora, deck );
  
      } else if ( puntosJugador === 21 ) {
-         console.warn(`21, genial! Puntaje: Jugador ${puntosJugador} | Computadora ${puntosComputadora}`);
+         console.warn(`21, genial! Puntaje: Jugador ${puntosJugador} | Computadora ${puntosHTML[1]}`);
          btnPedir.disabled   = true;
          btnDetener.disabled = true;
          turnoComputadora( puntosJugador, puntosHTML[1], divCartasComputadora, deck );
